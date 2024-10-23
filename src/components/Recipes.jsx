@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import { useState } from "react";
+import PropTypes from "prop-types";
 
-const Recipes = () => {
+const Recipes = ({handleAddRecipe}) => {
     const [recipes, setRecipes] = useState([]);
 
     useEffect(() => {
@@ -11,13 +12,12 @@ const Recipes = () => {
     }, []);
     
     return (
-        <div className="md:w-2/3">
-            Recipes {recipes.length}
+        <div className="lg:w-2/3">
 
-          <div className="grid lg:grid-cols-2 grid-cols-1 gap-6">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-6">
           {
             recipes.map(recipe => 
-                <div key={recipe.recipe_id} className="card bg-base-100 shadow-xl">
+                <div key={recipe.recipe_id} className="card bg-base-100 border-2">
                     <figure className="pt-6 px-8">
                         <img className="w-full md:h-48 rounded-xl"
                         src={recipe.recipe_image} />
@@ -38,17 +38,17 @@ const Recipes = () => {
 
                     <div className="flex gap-4">
                         <div className="flex items-center gap-2">
-                        <i className="fa-regular fa-clock text-lg"></i>
+                        <i className="fa-regular fa-clock text-2xl"></i>
                         <p className="text-gray-600 font-medium">{recipe.preparing_time} minutes</p>
                         </div>
 
                         <div className="flex items-center gap-2">
-                        <i className="fa-solid fa-fire text-lg"></i>
+                        <i className="fa-solid fa-fire text-2xl"></i>
                         <p className="text-gray-600 font-medium">{recipe.calories} calories</p>
                         </div>
                     </div>
                     <div className="card-actions">
-                    <button className="btn bg-green-500 rounded-full px-6 text-gray-900 font-bold">
+                    <button onClick={() => handleAddRecipe(recipe)} className="btn bg-green-400 rounded-full mt-4 px-8 text-gray-800 font-bold">
                         Want to Cook
                     </button>
                     </div>
@@ -60,5 +60,9 @@ const Recipes = () => {
         </div>
     );
 };
+
+Recipes.propTypes = {
+    handleAddRecipe: PropTypes.func
+}
 
 export default Recipes;
