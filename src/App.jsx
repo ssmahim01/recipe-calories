@@ -46,7 +46,7 @@ const calculateTimeAndCalories = (time, calories) => {
       {/* Our Recipes Start */}
       <OurRecipes></OurRecipes>
 
-      <section className="w-11/12 mx-auto flex flex-col lg:flex-row gap-4">
+      <section className="w-11/12 mx-auto flex flex-col lg:flex-row gap-4 mb-10">
         {/* Cards Content */}
         <Recipes handleAddRecipe={handleAddRecipe}></Recipes>
 
