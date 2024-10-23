@@ -7,6 +7,9 @@ import Sidebar from "./components/Sidebar";
 
 const App = () => {
   const [recipeQueue, setRecipeQueue] = useState([]);
+  const [preparedRecipe, setPreparedRecipe] = useState([]);
+  const [totalTime, setTotalTime] = useState(0);
+  const [totalCalories, setTotalCalories] = useState(0);
 
   const handleAddRecipe = recipe => {
    const isExist = recipeQueue.find(prevRecipe => prevRecipe.recipe_id === recipe.recipe_id);
@@ -17,6 +20,19 @@ const App = () => {
     const newRecipe = [...recipeQueue, recipe];
     setRecipeQueue(newRecipe);
    }
+};
+
+const handlePrepared = id => {
+  const removedRecipe = recipeQueue.find(recipe => recipe.recipe_id === id);
+
+  const updatedQueue = recipeQueue.filter(recipe => recipe.recipe_id !== id);
+  setRecipeQueue(updatedQueue);
+  setPreparedRecipe([...preparedRecipe, removedRecipe]);
+};
+
+const calculateTimeAndCalories = (time, calories) => {
+  setTotalTime(totalTime + parseInt(time));
+  setTotalCalories(totalCalories + calories);
 };
 
   return (
@@ -35,7 +51,13 @@ const App = () => {
         <Recipes handleAddRecipe={handleAddRecipe}></Recipes>
 
         {/* Sidebar */}
-        <Sidebar recipeQueue={recipeQueue}></Sidebar>
+        <Sidebar handlePrepared={handlePrepared}
+         preparedRecipe={preparedRecipe}
+          recipeQueue={recipeQueue} 
+          calculateTimeAndCalories={calculateTimeAndCalories}
+          totalTime={totalTime} 
+          totalCalories={totalCalories}
+          ></Sidebar>
       </section>
     </div>
   );
