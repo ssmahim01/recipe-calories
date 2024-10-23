@@ -2,7 +2,7 @@
     {
       "recipe_id": "1",
       "recipe_name": "Spicy Thai Noodles",
-      "recipe_image": "https://example.com/images/spicy_thai_noodles.jpg",
+      "recipe_image": "https://i.ibb.co.com/QDHmLWB/spicy-thai-noodles.jpg",
       "short_description": "A flavorful dish of rice noodles with a spicy Thai sauce, topped with fresh herbs.",
       "ingredients": [
         "200g rice noodles",
@@ -12,13 +12,13 @@
         "Fresh cilantro",
         "Lime wedges"
       ],
-      "preparing_time": "20 minutes",
+      "preparing_time": "20",
       "calories": 450
     },
     {
       "recipe_id": "2",
       "recipe_name": "Classic Margherita Pizza",
-      "recipe_image": "https://example.com/images/margherita_pizza.jpg",
+      "recipe_image": "https://i.ibb.co.com/zhdgcPZ/classic-margherita-pizza.jpg",
       "short_description": "A traditional pizza topped with fresh mozzarella, tomatoes, and basil.",
       "ingredients": [
         "Pizza dough",
@@ -28,13 +28,13 @@
         "Olive oil",
         "Salt"
       ],
-      "preparing_time": "30 minutes",
+      "preparing_time": "30",
       "calories": 700
     },
     {
       "recipe_id": "3",
       "recipe_name": "Vegan Lentil Soup",
-      "recipe_image": "https://example.com/images/vegan_lentil_soup.jpg",
+      "recipe_image": "https://i.ibb.co.com/b78cLyh/vegan-lentil-soup.jpg",
       "short_description": "Hearty and nutritious lentil soup, perfect for a cozy dinner.",
       "ingredients": [
         "1 cup red lentils",
@@ -44,13 +44,13 @@
         "1 liter vegetable broth",
         "Salt and pepper to taste"
       ],
-      "preparing_time": "40 minutes",
+      "preparing_time": "40",
       "calories": 350
     },
     {
       "recipe_id": "4",
       "recipe_name": "Grilled Chicken Caesar Salad",
-      "recipe_image": "https://example.com/images/grilled_chicken_caesar_salad.jpg",
+      "recipe_image": "https://i.ibb.co.com/9vtBCS3/grilled-chicken-caesar-salad.jpg",
       "short_description": "Classic Caesar salad topped with grilled chicken breast and Parmesan.",
       "ingredients": [
         "1 chicken breast",
@@ -60,13 +60,13 @@
         "Parmesan cheese",
         "Black pepper"
       ],
-      "preparing_time": "25 minutes",
+      "preparing_time": "25",
       "calories": 600
     },
     {
       "recipe_id": "5",
       "recipe_name": "Chocolate Chip Banana Bread",
-      "recipe_image": "https://example.com/images/chocolate_chip_banana_bread.jpg",
+      "recipe_image": "https://i.ibb.co.com/p48Z7HH/chocolate-chip-banana-bread.jpg",
       "short_description": "Moist banana bread with chocolate chips, perfect for dessert or breakfast.",
       "ingredients": [
         "3 ripe bananas",
@@ -76,13 +76,13 @@
         "1 cup chocolate chips",
         "1 teaspoon baking soda"
       ],
-      "preparing_time": "60 minutes",
+      "preparing_time": "60",
       "calories": 500
     },
     {
       "recipe_id": "6",
       "recipe_name": "Avocado Toast with Poached Egg",
-      "recipe_image": "https://example.com/images/avocado_toast_poached_egg.jpg",
+      "recipe_image": "https://i.ibb.co.com/Qd5Xgq4/avocado-toast-with-poached-egg.jpg",
       "short_description": "Creamy avocado spread on toasted bread, topped with a perfectly poached egg.",
       "ingredients": [
         "1 slice whole grain bread",
@@ -92,7 +92,7 @@
         "Black pepper",
         "Chili flakes (optional)"
       ],
-      "preparing_time": "15 minutes",
+      "preparing_time": "15",
       "calories": 300
     }
-]  
+]

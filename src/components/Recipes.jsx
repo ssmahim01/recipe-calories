@@ -35,8 +35,22 @@ const Recipes = () => {
                             )
                         }
                     </ul>
-                    <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
+
+                    <div className="flex gap-4">
+                        <div className="flex items-center gap-2">
+                        <i className="fa-regular fa-clock text-lg"></i>
+                        <p className="text-gray-600 font-medium">{recipe.preparing_time} minutes</p>
+                        </div>
+
+                        <div className="flex items-center gap-2">
+                        <i className="fa-solid fa-fire text-lg"></i>
+                        <p className="text-gray-600 font-medium">{recipe.calories} calories</p>
+                        </div>
+                    </div>
+                    <div className="card-actions">
+                    <button className="btn bg-green-500 rounded-full px-6 text-gray-900 font-bold">
+                        Want to Cook
+                    </button>
                     </div>
                 </div>
                 </div>
